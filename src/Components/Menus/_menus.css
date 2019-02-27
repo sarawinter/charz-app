@@ -1,0 +1,19 @@
+
+.global-menu {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.global-menu a {
+    font-size: 20pt;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    margin-right: 0px;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.3);
+}
+
+.global-menu a.selected, .global-menu a:focus {
+    background-color: white;
+    color: #fe90c7;
+}

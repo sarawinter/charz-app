@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Raleway');
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #72a2bc;
+  font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+  background: #FF99CC;
+  background: -moz-linear-gradient(45deg, #FF99CC 0%,#ffffff 22%,#ffffff 30%,#FF99CC 74%,#FD6CB5 100%);
+  background: -webkit-linear-gradient(45deg, #FF99CC 0%,#ffffff 22%,#ffffff 30%,#FF99CC 74%,#FD6CB5 100%);
+  background: linear-gradient(45deg, #FF99CC 0%,#ffffff 22%,#ffffff 30%,#FF99CC 74%,#FD6CB5 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Comfortaa, Arial, Helvetica, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.rnd-workout {
+  max-width: 660px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
