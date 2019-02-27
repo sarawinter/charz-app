@@ -1,0 +1,85 @@
+
+.full-char img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.full-char h2 {
+    text-align: center;
+}
+
+.full-char h3 {
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    line-height: 9pt;
+    margin-bottom: 0;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+}
+
+.full-char h3 .line {
+    flex-grow: 1;
+    border-bottom: 1px dotted rgba(0,0,0,0.3);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.full-char h4 {
+    text-transform: uppercase;
+    font-size: 7pt;
+    line-height: 12pt;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    padding-left: 10px;
+    position: relative;
+    letter-spacing: 0.5pt;
+}
+
+.full-char .top-info {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px dotted rgba(128, 159, 124, 0.5);
+    padding: 10px;
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-radius: 20px;
+}
+
+.full-char .top-info .leftish {
+    max-width: 40%;
+    margin-right: 10px;
+}
+
+.full-char .content {
+    text-align: left;
+}
+
+.full-char .quote {
+    line-height: 11pt;
+    font-size: 10pt;
+    text-align: center;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.full-char .data p {
+    line-height: 12pt;
+    font-size: 9pt;
+    margin: 0;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.full-char ul {
+    list-style-type: circle;
+    padding-left: 25px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Raleway');
-@import url('https://fonts.googleapis.com/css?family=Amiri|Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Amiri|Fredericka+the+Great|Open+Sans');
 
 * {
   box-sizing: border-box;
@@ -15,9 +15,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #72a2bc;
-  font-family: Amiri, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Amiri', Verdana, Geneva, Tahoma, sans-serif;
   background: #FFFDE3;
   background: linear-gradient(0deg, #DBC888 0%,#FFFDE3 20%,#FFFDE3 80%,#DBC888 100%);
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {

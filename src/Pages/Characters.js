@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './_page.css';
 
+import CharzMiniList from '../Components/Character/CharzMinisList';
+import AddBtn from '../Components/FormElements/AddBtn';
+
 class Characters extends Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            
+
         }
     }
 
@@ -15,10 +18,10 @@ class Characters extends Component {
         return (
             <div className="page">
                 <div className="page-content">
-                    <h1>This is ExerciseList</h1>
-                    <p>
-                        Hello from planet Sand!
-                    </p>
+                    <CharzMiniList />
+                    <div className="control-area">
+                        <AddBtn />
+                    </div>
                 </div>
             </div>
         );

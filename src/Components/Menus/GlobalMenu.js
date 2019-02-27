@@ -8,7 +8,7 @@ class GlobalMenu extends Component {
             <nav className="global-menu">
                 <div className="left">
                     <NavLink activeClassName="selected" exact to="/"><i className="fas fa-home"></i></NavLink>
-                    <NavLink activeClassName="selected" exact to="/characters"><i className="fas fa-users"></i></NavLink>
+                    <NavLink activeClassName="selected" to="/characters"><i className="fas fa-users"></i></NavLink>
                     <NavLink activeClassName="selected" exact to="/articles"><i className="far fa-newspaper"></i></NavLink>
                     <NavLink activeClassName="selected" exact to="/tipsntricks"><i className="far fa-lightbulb"></i></NavLink>
                 </div>

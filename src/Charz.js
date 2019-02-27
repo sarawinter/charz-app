@@ -5,6 +5,7 @@ import GlobalHeader from './Components/Global/GlobalHeader';
 
 import Home from './Pages/Home';
 import Characters from './Pages/Characters';
+import Character from './Pages/Character';
 import Articles from './Pages/Articles';
 import TipsTricks from './Pages/TipsTricks';
 import Help from './Pages/Help';
@@ -17,7 +18,8 @@ class Charz extends Component {
                 <div className="charz">
                     <GlobalHeader />
                     <Route exact path="/" component={Home} />
-                    <Route path="/characters" component={Characters} />
+                    <Route exact path="/characters" component={Characters} />
+                    <Route path="/characters/:id" component={Character} />
                     <Route path="/articles" component={Articles} />
                     <Route path="/tipsntricks" component={TipsTricks} />
                     <Route path="/help" component={Help} />

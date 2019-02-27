@@ -1,0 +1,13 @@
+
+.add-btn {
+    margin: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background: radial-gradient(ellipse at 30% 30%, #d0eac5 0%,#8cb577 51%,#8cb577 10%);
+    color: white;
+    font-size: 20px;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.3);
+}

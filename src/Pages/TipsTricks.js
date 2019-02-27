@@ -15,9 +15,9 @@ class TipsTricks extends Component {
         return (
             <div className="page">
                 <div className="page-content">
-                    <h1>Full Randomized Workout</h1>
-                    <p>
-                        Hello from planet Sand!
+                    <h1>Tips & Tricks</h1>
+                    <p className="subtitle">
+                        Find good tricks on how to create a memorable character.
                     </p>
                 </div>
             </div>

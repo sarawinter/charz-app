@@ -1,0 +1,27 @@
+.chars-mini-list {
+
+}
+.chars-mini-list article {
+    margin-bottom: 10px;
+    border: 1px dotted rgba(128, 159, 124, 0.5);
+    background-color: rgba(255,255,255,0.8);
+    padding: 7px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.chars-mini-list article img {
+    border-radius: 50%;
+    max-width: 50px;
+    float: left;
+}
+
+.chars-mini-list article h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12pt;
+    text-align: center;
+    color: firebrick;
+    flex-grow: 1;
+}

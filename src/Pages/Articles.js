@@ -6,9 +6,9 @@ class Articles extends Component {
         return (
             <div className="page">
                 <div className="page-content">
-                    <h1>This is Randomizer</h1>
-                    <p>
-                        Hello from planet Sand!
+                    <h1>Articles</h1>
+                    <p className="subtitle">
+                        Read interesting articles about creating characters.
                     </p>
                 </div>
             </div>
