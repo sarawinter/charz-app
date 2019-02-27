@@ -6,11 +6,16 @@ class GlobalMenu extends Component {
     render() {
         return (
             <nav className="global-menu">
-                <NavLink activeClassName="selected" exact to="/"><i className="fas fa-home"></i></NavLink>
-                <NavLink activeClassName="selected" exact to="/rnd-workout"><i className="fas fa-list"></i></NavLink>
-                <NavLink activeClassName="selected" exact to="/list"><i className="fas fa-dumbbell"></i></NavLink>
-                <NavLink activeClassName="selected" exact to="/random"><i className="fas fa-random"></i></NavLink>
-                <NavLink activeClassName="selected" exact to="/links"><i className="fas fa-link"></i></NavLink>
+                <div className="left">
+                    <NavLink activeClassName="selected" exact to="/"><i className="fas fa-home"></i></NavLink>
+                    <NavLink activeClassName="selected" exact to="/characters"><i className="fas fa-users"></i></NavLink>
+                    <NavLink activeClassName="selected" exact to="/articles"><i className="far fa-newspaper"></i></NavLink>
+                    <NavLink activeClassName="selected" exact to="/tipsntricks"><i className="far fa-lightbulb"></i></NavLink>
+                </div>
+                <div className="right">
+                    <NavLink activeClassName="selected" exact to="/help"><i className="far fa-question-circle"></i></NavLink>
+                    <NavLink activeClassName="selected" exact to="/settings"><i className="fas fa-cogs"></i></NavLink>
+                </div>
             </nav>
         );
     }

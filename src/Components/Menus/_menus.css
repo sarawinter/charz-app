@@ -1,6 +1,8 @@
 
 .global-menu {
     background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    width: 100%;
 }
 
 .global-menu a {
@@ -10,10 +12,14 @@
     padding: 10px 10px;
     text-decoration: none;
     display: inline-block;
-    color: rgba(0,0,0,0.3);
+    color: rgba(128, 159, 124, 0.71);
 }
 
 .global-menu a.selected, .global-menu a:focus {
-    background-color: white;
-    color: #fe90c7;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(178, 34, 34, 0.71);
+}
+
+.global-menu .left {
+    flex-grow: 1;
 }

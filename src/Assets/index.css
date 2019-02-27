@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Amiri|Fredericka+the+Great');
 
 * {
   box-sizing: border-box;
@@ -14,15 +15,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: #72a2bc;
-  font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
-  background: #FF99CC;
-  background: -moz-linear-gradient(45deg, #FF99CC 0%,#ffffff 22%,#ffffff 30%,#FF99CC 74%,#FD6CB5 100%);
-  background: -webkit-linear-gradient(45deg, #FF99CC 0%,#ffffff 22%,#ffffff 30%,#FF99CC 74%,#FD6CB5 100%);
-  background: linear-gradient(45deg, #FF99CC 0%,#ffffff 22%,#ffffff 30%,#FF99CC 74%,#FD6CB5 100%);
+  font-family: Amiri, Verdana, Geneva, Tahoma, sans-serif;
+  background: #FFFDE3;
+  background: linear-gradient(0deg, #DBC888 0%,#FFFDE3 20%,#FFFDE3 80%,#DBC888 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Comfortaa, Arial, Helvetica, sans-serif;
+  font-family: 'Fredericka the Great', Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
 
 code {
@@ -36,7 +36,7 @@ img {
   display: block;
 }
 
-.rnd-workout {
+.charz {
   max-width: 660px;
   height: 100%;
   margin-left: auto;

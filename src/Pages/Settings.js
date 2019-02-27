@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './_page.css';
 
-class Test extends Component {
+class Settings extends Component {
 
     constructor(props) {
         super(props);
@@ -48,4 +48,4 @@ class Test extends Component {
     }
 }
 
-export default Test;
+export default Settings;

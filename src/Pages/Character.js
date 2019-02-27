@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
 import './_page.css';
 
-class RandomWorkout extends Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            
-        }
-    }
-
+class Character extends Component {
     render() {
         return (
             <div className="page">
                 <div className="page-content">
-                    <h1>Full Randomized Workout</h1>
+                    <h1>This is Links</h1>
                     <p>
                         Hello from planet Sand!
                     </p>
@@ -25,4 +16,4 @@ class RandomWorkout extends Component {
     }
 }
 
-export default RandomWorkout;
+export default Character;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './_page.css';
 
-class Randomizer extends Component {
+class Articles extends Component {
     render() {
         return (
             <div className="page">
@@ -16,4 +16,4 @@ class Randomizer extends Component {
     }
 }
 
-export default Randomizer;
+export default Articles;

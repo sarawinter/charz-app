@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './_page.css';
 
-class ExerciseList extends Component {
+class Characters extends Component {
 
     constructor(props) {
         super(props);
@@ -25,4 +25,4 @@ class ExerciseList extends Component {
     }
 }
 
-export default ExerciseList;
+export default Characters;

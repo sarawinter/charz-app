@@ -7,19 +7,27 @@
 
 h1 {
     margin-top: 0;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 38px;
+    color: firebrick;
 }
 
 h2 {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h3 {
     margin-top: 0;
-    font-size: 18px;
-    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-family: Amiri, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 11pt;
+    line-height: 12pt;
 }
 
 .page-side-col {
@@ -30,7 +38,7 @@ h3 {
 }
 
 .page-content {
-    padding: 20px;
+    padding: 10px;
     flex-grow: 1;
     line-height: 21px;
 }
