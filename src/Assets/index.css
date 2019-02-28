@@ -14,10 +14,8 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #72a2bc;
-  font-family: 'Amiri', Verdana, Geneva, Tahoma, sans-serif;
-  background: #FFFDE3;
-  background: linear-gradient(0deg, #DBC888 0%,#FFFDE3 20%,#FFFDE3 80%,#DBC888 100%);
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  background: #f6f5ea;
   background-attachment: fixed;
 }
 

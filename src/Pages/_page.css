@@ -37,7 +37,7 @@ h3 {
 p {
     margin-top: 7px;
     margin-bottom: 7px;
-    font-size: 11pt;
+    font-size: 10pt;
     line-height: 13pt;
 }
 
@@ -49,7 +49,7 @@ p {
 }
 
 .page-content {
-    padding: 10px;
+    padding: 15px;
     flex-grow: 1;
     line-height: 21px;
 }

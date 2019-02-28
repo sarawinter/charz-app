@@ -14,7 +14,7 @@ import Settings from './Pages/Settings';
 class Charz extends Component {
     render() {
         return (
-            <Router>
+            <Router basename="/charz">
                 <div className="charz">
                     <GlobalHeader />
                     <Route exact path="/" component={Home} />
