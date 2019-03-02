@@ -13,7 +13,8 @@ class GlobalMenu extends Component {
                     <NavLink activeClassName="selected" exact to="/tipsntricks"><i className="far fa-lightbulb"></i></NavLink>
                 </div>
                 <div className="right">
-                    <NavLink activeClassName="selected" exact to="/help"><i className="far fa-question-circle"></i></NavLink>
+                    {/*<NavLink activeClassName="selected" exact to="/help"><i className="far fa-question-circle"></i></NavLink>*/}
+                    <NavLink activeClassName="selected" exact to="/shop"><i className="fas fa-shopping-cart"></i></NavLink>
                     <NavLink activeClassName="selected" exact to="/settings"><i className="fas fa-cogs"></i></NavLink>
                 </div>
             </nav>
