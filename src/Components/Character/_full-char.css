@@ -93,3 +93,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.full-char .pos-right {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}

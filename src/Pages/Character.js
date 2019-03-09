@@ -31,9 +31,9 @@ class Character extends Component {
                 </div>
                 <div className="control-area">
                 {this.state.editEnabled ?
-                    <MainBtn type="cancel" onClickEvent={this.cancelEditMode} />
+                    <MainBtn enabled={true} size="large" type="cancel" onClickEvent={this.cancelEditMode} />
                 :
-                    <MainBtn type="edit" onClickEvent={this.enableEditMode} />
+                    <MainBtn enabled={true} size="large" type="main-edit" onClickEvent={this.enableEditMode} />
                 }
                 </div>
             </div>

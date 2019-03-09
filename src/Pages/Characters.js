@@ -20,7 +20,7 @@ class Characters extends Component {
                 <div className="page-content">
                     <CharzMiniList />
                     <div className="control-area">
-                        <MainBtn type="add" />
+                        <MainBtn enabled={true} size="large" type="main-add" />
                     </div>
                 </div>
             </div>

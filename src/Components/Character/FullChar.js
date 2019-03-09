@@ -5,7 +5,7 @@ import '../FormElements/_form-container.css';
 import '../FormElements/_form-elements.css';
 
 import Metadata from './Traits/Metadata';
-import SmallBtn from '../FormElements/SmallBtn';
+import MainBtn from '../FormElements/MainBtn';
 
 class FullChar extends Component {
 
@@ -47,11 +47,11 @@ class FullChar extends Component {
                     </div>
                 </div>
                 <div className="content">
-                    <h3><SmallBtn enabled={inEditMode} /><span className={inEditMode ? 'editing' : ''}>Short</span><span className="line"></span></h3>
+                    <h3><MainBtn enabled={inEditMode} size="small" type="edit" /><span className={inEditMode ? 'editing' : ''}>Short</span><span className="line"></span></h3>
                     <p>{character.short}</p>
-                    <h3><SmallBtn enabled={inEditMode} /><span className={inEditMode ? 'editing' : ''}>History</span><span className="line"></span></h3>
+                    <h3><MainBtn enabled={inEditMode} size="small" type="edit" /><span className={inEditMode ? 'editing' : ''}>History</span><span className="line"></span></h3>
                     <p>{character.history}</p>
-                    <h3><SmallBtn enabled={inEditMode} /><span className={inEditMode ? 'editing' : ''}>Physical Appearance</span><span className="line"></span></h3>
+                    <h3><MainBtn enabled={inEditMode} size="small" type="edit" /><span className={inEditMode ? 'editing' : ''}>Physical Appearance</span><span className="line"></span></h3>
                     <p>{character.physicalAppearance}</p>
                     <ul>
                         <li>Eye color: <span>{character.physicalAppearanceList && character.physicalAppearanceList.eyeColor}</span></li>

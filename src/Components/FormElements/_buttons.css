@@ -1,62 +1,56 @@
 
-.default, .alt, .alt2, .alt3 {
-    margin: 20px;
-    border-radius: 50%;
-    padding: 10px;
-    height: 50px;
-    width: 50px;
-    border: 3px solid #89BDD3;
-    background: #05386B;
-    color: #e7e5de;
-    font-size: 20px;
+*[class^="btn-"] {
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.3);
     pointer-events: all;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #777;
+    border-radius: 50%;
 }
 
-.alt {
-    border: 3px solid white;
-    background: white;
-    color: firebrick;
+.btn-main-add, .btn-main-edit {
+    border: 0px solid #89BDD3;
+    background: #05386B;
+    color: #fff;
 }
 
-.alt2 {
+.btn-cancel {
+    border: 0px solid white;
+    background: firebrick;
+    color: white;
+}
+
+.btn-save {
     border: 3px solid white;
     background: white;
     color: #58b222;
 }
 
-.alt3 {
-    border: 3px solid white;
+.btn-info {
+    border: 0px solid white;
     color: white;
     background: #f2f241;
 }
 
-.small-btn {
+*[class^="btn-"].large {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+
+*[class^="btn-"].small {
     margin: 0;
-    border-radius: 50%;
-    padding: 0px;
     height: 25px;
     width: 25px;
-    border: 1px solid #fff;
-    background: #fff;
-    color: #777;
     font-size: 12px;
-    pointer-events: all;
     top: -9px;
     position: absolute;
-    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-.pos-right {
-    position: absolute;
-    right: 20px;
-    top: 5px;
-}
-
-.medium {
+*[class^="btn-"].medium {
     margin: 5px;
-    padding: 5px;
     height: 35px;
     width: 35px;
-    border-width: 2px;
+    font-size: 20px;
 }

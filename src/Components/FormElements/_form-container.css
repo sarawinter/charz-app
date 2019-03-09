@@ -23,9 +23,8 @@
 }
 .cancel-zone {
     position: fixed;
-    right: 10px;
-    top: 60px;
-    padding: 5px;
+    right: 32px;
+    top: 65px;
 }
 .control-zone {
     position: absolute;

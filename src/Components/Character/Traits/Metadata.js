@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import MediumBtn from '../../FormElements/MediumBtn';
-import SmallBtn from '../../FormElements/SmallBtn';
+import MainBtn from '../../FormElements/MainBtn';
 
 class Edit extends Component {
     render() {
@@ -11,7 +10,7 @@ class Edit extends Component {
             <div className="edit-form">
                 <div className="edit-form-inner">
                     <div className="cancel-zone">
-                        <MediumBtn type="cancel" enabled={true} position="right" onClickEvent={this.props.toggleEditForm} />
+                        <MainBtn type="close" size="small" enabled={true} position="right" onClickEvent={this.props.toggleEditForm} />
                     </div>
                     <label>
                         <h4>Full name:</h4>
@@ -45,11 +44,11 @@ class Edit extends Component {
                     </label>
                 </div>
                 <div className="control-zone">
-                    <div style={{flexGrow: 1}}>
-                        <MediumBtn type="info" />
+                    <div style={{ flexGrow: 1 }}>
+                        <MainBtn enabled={true} type="info" size="medium" />
                     </div>
                     <div>
-                        <MediumBtn type="save" />
+                        <MainBtn enabled={true} type="save" size="medium" />
                     </div>
                 </div>
             </div>
@@ -109,7 +108,9 @@ class Metadata extends Component {
                     </div>
                     :
                     <div>
-                        <SmallBtn enabled={inEditMode} position="right" onClickEvent={this.toggleEditForm} />
+                        <div className="pos-right">
+                            <MainBtn enabled={inEditMode} size="small" type="edit" onClickEvent={this.toggleEditForm} />
+                        </div>
                         <Read {...this.props} />
                     </div>
                 }
