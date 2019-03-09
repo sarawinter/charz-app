@@ -1,13 +1,62 @@
 
-.add-btn {
+.default, .alt, .alt2, .alt3 {
     margin: 20px;
     border-radius: 50%;
     padding: 10px;
     height: 50px;
     width: 50px;
-    border: 2px solid rgba(255, 255, 255, 0.8);
-    background: radial-gradient(ellipse at 30% 30%, #d0eac5 0%,#8cb577 51%,#8cb577 10%);
-    color: white;
+    border: 3px solid #89BDD3;
+    background: #05386B;
+    color: #e7e5de;
     font-size: 20px;
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.3);
+    pointer-events: all;
+}
+
+.alt {
+    border: 3px solid white;
+    background: white;
+    color: firebrick;
+}
+
+.alt2 {
+    border: 3px solid white;
+    background: white;
+    color: #58b222;
+}
+
+.alt3 {
+    border: 3px solid white;
+    color: white;
+    background: #f2f241;
+}
+
+.small-btn {
+    margin: 0;
+    border-radius: 50%;
+    padding: 0px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #777;
+    font-size: 12px;
+    pointer-events: all;
+    top: -9px;
+    position: absolute;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.pos-right {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+
+.medium {
+    margin: 5px;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    border-width: 2px;
 }

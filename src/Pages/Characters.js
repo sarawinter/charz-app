@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './_page.css';
 
 import CharzMiniList from '../Components/Character/CharzMinisList';
-import AddBtn from '../Components/FormElements/AddBtn';
+import MainBtn from '../Components/FormElements/MainBtn';
 
 class Characters extends Component {
 
@@ -20,7 +20,7 @@ class Characters extends Component {
                 <div className="page-content">
                     <CharzMiniList />
                     <div className="control-area">
-                        <AddBtn />
+                        <MainBtn type="add" />
                     </div>
                 </div>
             </div>

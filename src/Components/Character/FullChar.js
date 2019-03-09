@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import * as Characters from '../../Data/Characters';
+import * as Characters from '../../Data/CharactersData';
 import './_full-char.css';
+import '../FormElements/_form-container.css';
+import '../FormElements/_form-elements.css';
+
+import Metadata from './Traits/Metadata';
+import SmallBtn from '../FormElements/SmallBtn';
 
 class FullChar extends Component {
 
@@ -20,63 +25,41 @@ class FullChar extends Component {
     render() {
 
         const character = this.state.char;
-        const name = character.nickname ? <span>&ldquo;{character.nickname}&rdquo;<br></br>{character.name}</span> : character.name;
+        const inEditMode = this.props.editEnabled;
+        let name = null;
+
+        if (character && character.metadata) {
+            name = character.metadata.nickname ?
+                <span>&ldquo;{character.metadata.nickname}&rdquo;<br></br>{character.metadata.name}</span> :
+                character.metadata.name;
+        }
 
         return (
             <div className="full-char">
                 <h2>{name}</h2>
                 <div className="top-info">
-                <div className="leftish">
-                    <img src={character.imageId} alt="" />
-                    <p className="quote">&ldquo;Something really cool this character said once.&rdquo;</p>
-                </div>
-                <div className="rightish">
-                    <div className="data">
-                        <h4>Full name:</h4>
-                        <p>{character.name}</p>
-                        <h4>Age:</h4>
-                        <p>42</p>
-                        <h4>Place of birth:</h4>
-                        <p>Stockholm, Sweden</p>
-                        <h4>Current address:</h4>
-                        <p>Vikingavägen 25C, 258 55 Stockholm, SWEDEN</p>
-                        <h4>Race:</h4>
-                        <p>Human</p>
-                        <h4>Languages:</h4>
-                        <p>Swedish, English, Japanese</p>
+                    <div className="leftish">
+                        <img src={character.imageId} alt="" />
+                        <p className="quote">&ldquo;{character.metadata && character.metadata.quote}&rdquo;</p>
+                    </div>
+                    <div className="rightish">
+                        <Metadata metadata={character.metadata} inEditMode={inEditMode} />
                     </div>
                 </div>
-                </div>
                 <div className="content">
-                    <h3><span>Short</span><span className="line"></span></h3>
-                    <p>This is a cute little text to get the attention of your reader and so that your
-                        remember to make the character as memorable as possible. Don't go crazy though.
-                    </p>
-                    <h3><span>History</span><span className="line"></span></h3>
-                    <p>This is a cute little text to get the attention of your reader and so that your
-                        remember to make the character as memorable as possible. Don't go crazy though.
-                        This is a cute little text to get the attention of your reader and so that your
-                        remember to make the character as memorable as possible. Don't go crazy though.
-                        This is a cute little text to get the attention of your reader and so that your
-                        remember to make the character as memorable as possible. Don't go crazy though.
-                        This is a cute little text to get the attention of your reader and so that your
-                        remember to make the character as memorable as possible. Don't go crazy though.
-                    </p>
-                    <h3><span>Physical Appearance</span><span className="line"></span></h3>
-                    <p>This is a cute little text to get the attention of your reader and so that your
-                        remember to make the character as memorable as possible. Don't go crazy though.
-                        This is a cute little text to get the attention of your reader and so that your
-                        remember to make the character as memorable as possible. Don't go crazy though.
-                    </p>
-                    <p>
-                        <ul>
-                            <li>Eye color: <span>Brown</span></li>
-                            <li>Hair color: <span>Greying from black</span></li>
-                            <li>Height: <span>189cm</span></li>
-                            <li>Weight: <span>79kg</span></li>
-                            <li>Build: <span>Medium</span></li>
-                        </ul>
-                    </p>
+                    <h3><SmallBtn enabled={inEditMode} /><span className={inEditMode ? 'editing' : ''}>Short</span><span className="line"></span></h3>
+                    <p>{character.short}</p>
+                    <h3><SmallBtn enabled={inEditMode} /><span className={inEditMode ? 'editing' : ''}>History</span><span className="line"></span></h3>
+                    <p>{character.history}</p>
+                    <h3><SmallBtn enabled={inEditMode} /><span className={inEditMode ? 'editing' : ''}>Physical Appearance</span><span className="line"></span></h3>
+                    <p>{character.physicalAppearance}</p>
+                    <ul>
+                        <li>Eye color: <span>{character.physicalAppearanceList && character.physicalAppearanceList.eyeColor}</span></li>
+                        <li>Hair color: <span>{character.physicalAppearanceList && character.physicalAppearanceList.hairColor}</span></li>
+                        <li>Height: <span>{character.physicalAppearanceList && character.physicalAppearanceList.height}</span></li>
+                        <li>Weight: <span>{character.physicalAppearanceList && character.physicalAppearanceList.weight}</span></li>
+                        <li>Build: <span>{character.physicalAppearanceList && character.physicalAppearanceList.build}</span></li>
+                    </ul>
                 </div>
             </div>
         );

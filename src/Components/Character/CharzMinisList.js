@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
-import * as Characters from '../../Data/Characters';
+import * as Characters from '../../Data/CharactersData';
 
 import './_char-mini.css';
 

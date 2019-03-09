@@ -5,7 +5,9 @@ class Characters extends Component {
     render() {
 
         const character = this.props.character;
-        const name = character.nickname ? <span>&ldquo;{character.nickname}&rdquo;<br></br>{character.name}</span> : character.name;
+        const name = character.metadata && character.metadata.nickname ? 
+        <span>&ldquo;{character.metadata.nickname}&rdquo;<br></br>{character.metadata.name}</span> : 
+        character.metadata.name;
 
         return (
             <article className="mini-char" onClick={() => this.props.goto(character.id)}>

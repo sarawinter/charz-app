@@ -1,0 +1,16 @@
+input, textarea {
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px dashed #fff;
+    border-bottom: 1px dashed #fff;
+    width: 100%;
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 9pt;
+    font-family: monospace;
+}
+input:focus, textarea:focus { 
+    border-bottom: 1px dashed #ccc;
+}

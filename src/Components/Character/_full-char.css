@@ -19,6 +19,9 @@
     position: relative;
     display: flex;
 }
+.full-char h3 .editing {
+    padding-left: 35px;
+}
 
 .full-char h3 .line {
     flex-grow: 1;
@@ -38,6 +41,7 @@
     padding-left: 10px;
     position: relative;
     letter-spacing: 0.5pt;
+    pointer-events: none;
 }
 
 .full-char .top-info {
@@ -53,6 +57,10 @@
 .full-char .top-info .leftish {
     max-width: 40%;
     margin-right: 10px;
+    position: relative;
+}
+.full-char .top-info .rightish {
+    position: relative;
 }
 
 .full-char .content {

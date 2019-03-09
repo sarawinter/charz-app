@@ -7,6 +7,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+*:focus {
+  outline: none;
+}
+
 html, body {
   height: 100%;
 }
@@ -43,5 +47,5 @@ img {
   min-height: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f6f4ea;
+  background-color: #e7e5de;
 }
