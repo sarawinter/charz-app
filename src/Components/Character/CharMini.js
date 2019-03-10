@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
-class Characters extends Component {
+class CharMini extends Component {
 
     render() {
-
         const character = this.props.character;
-        const name = character.metadata && character.metadata.nickname ? 
-        <span>&ldquo;{character.metadata.nickname}&rdquo;<br></br>{character.metadata.name}</span> : 
-        character.metadata.name;
+        const name = character && character.nickname ?
+            <span>&ldquo;{character.nickname}&rdquo;<br></br>{character.fullName}</span> :
+            character.fullName;
 
         return (
             <article className="mini-char" onClick={() => this.props.goto(character.id)}>
-                <img src={character.imageId} alt="" />
+                <img src={character.image} alt="" />
                 <h2>{name}</h2>
+                <div class="completed-value">{character.completedValue}%</div>
             </article>
         );
     }
 }
 
-export default Characters;
+export default CharMini;

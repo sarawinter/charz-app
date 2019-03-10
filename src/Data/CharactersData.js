@@ -1,30 +1,22 @@
 
-import Img01 from '../Assets/char-avatars/01.png';
-import Img02 from '../Assets/char-avatars/02.png';
-import Img03 from '../Assets/char-avatars/03.png';
-import Img04 from '../Assets/char-avatars/04.png';
-import Img05 from '../Assets/char-avatars/05.png';
-import Img06 from '../Assets/char-avatars/06.png';
-import Img07 from '../Assets/char-avatars/07.png';
-import Img08 from '../Assets/char-avatars/08.png';
-import Img09 from '../Assets/char-avatars/09.png';
-import Img10 from '../Assets/char-avatars/10.png';
-import Img11 from '../Assets/char-avatars/11.png';
-import Img12 from '../Assets/char-avatars/12.png';
-import Img13 from '../Assets/char-avatars/13.png';
-import Img14 from '../Assets/char-avatars/14.png';
-import Img15 from '../Assets/char-avatars/15.png';
-import Img16 from '../Assets/char-avatars/16.png';
-import Img17 from '../Assets/char-avatars/17.png';
-import Img18 from '../Assets/char-avatars/18.png';
+import Char01 from './Char01';
+import Char02 from './Char02';
+import Char03 from './Char03';
+import Char04 from './Char04';
+import Char05 from './Char05';
+
+const characters = [Char01, Char02, Char03, Char04, Char05];
 
 export function getCharacters() {
     return characters;
 }
 
 export function getCharacterById(id) {
-    return characters.find(char => char.id === id);
+    return characters.find(char => char.metadata.id === id);
 }
+
+
+/*
 
 const images = [Img01, Img02, Img03, Img04, Img05, Img06, Img07, Img08, Img09, Img10, Img11, Img12, Img13, Img14, Img15, Img16, Img17, Img18]
 
@@ -195,3 +187,4 @@ const characters = [
         }
     },
 ];
+*/

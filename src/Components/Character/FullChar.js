@@ -4,8 +4,8 @@ import './_full-char.css';
 import '../FormElements/_form-container.css';
 import '../FormElements/_form-elements.css';
 
-import Metadata from './Traits/Metadata';
-import MainBtn from '../FormElements/MainBtn';
+import BasicInfo from './Traits/BasicInfo';
+import DisplayFull from './Traits/DisplayFull'
 
 class FullChar extends Component {
 
@@ -13,53 +13,63 @@ class FullChar extends Component {
         super(props);
 
         this.state = {
-            char: {}
+            char: {},
+            basics: {}
         }
     }
 
     componentDidMount() {
         const character = Characters.getCharacterById(this.props.charId);
-        this.setState({ char: character });
+        const basics = this.getBasicData(character);
+        this.setState({
+            char: character,
+            basics: basics
+        });
+    }
+
+    getBasicData = (character) => {
+        const fullName = character.basicInfo.find(info => info.id === "basicinfo.fullname");
+        const nickname = character.basicInfo.find(info => info.id === "basicinfo.nickname");
+        const quote = character.image.caption;
+        const id = character.metadata.id;
+        const image = character.image.imageSrc;
+
+        return {
+            fullName: fullName.value,
+            nickname: nickname.value,
+            id: id,
+            image: image,
+            quote: quote
+        }
     }
 
     render() {
 
         const character = this.state.char;
+        const basicInfo = this.state.basics;
         const inEditMode = this.props.editEnabled;
         let name = null;
 
-        if (character && character.metadata) {
-            name = character.metadata.nickname ?
-                <span>&ldquo;{character.metadata.nickname}&rdquo;<br></br>{character.metadata.name}</span> :
-                character.metadata.name;
-        }
+        name = basicInfo.nickname ?
+            <span>&ldquo;{basicInfo.nickname}&rdquo;<br></br>{basicInfo.fullName}</span> :
+            basicInfo.fullName;
 
         return (
             <div className="full-char">
                 <h2>{name}</h2>
                 <div className="top-info">
                     <div className="leftish">
-                        <img src={character.imageId} alt="" />
-                        <p className="quote">&ldquo;{character.metadata && character.metadata.quote}&rdquo;</p>
+                        <img src={basicInfo.image} alt="" />
+                        <p className="quote">&ldquo;{basicInfo.quote}&rdquo;</p>
                     </div>
                     <div className="rightish">
-                        <Metadata metadata={character.metadata} inEditMode={inEditMode} />
+                        <BasicInfo data={character.basicInfo} inEditMode={inEditMode} />
                     </div>
                 </div>
                 <div className="content">
-                    <h3><MainBtn enabled={inEditMode} size="small" type="edit" /><span className={inEditMode ? 'editing' : ''}>Short</span><span className="line"></span></h3>
-                    <p>{character.short}</p>
-                    <h3><MainBtn enabled={inEditMode} size="small" type="edit" /><span className={inEditMode ? 'editing' : ''}>History</span><span className="line"></span></h3>
-                    <p>{character.history}</p>
-                    <h3><MainBtn enabled={inEditMode} size="small" type="edit" /><span className={inEditMode ? 'editing' : ''}>Physical Appearance</span><span className="line"></span></h3>
-                    <p>{character.physicalAppearance}</p>
-                    <ul>
-                        <li>Eye color: <span>{character.physicalAppearanceList && character.physicalAppearanceList.eyeColor}</span></li>
-                        <li>Hair color: <span>{character.physicalAppearanceList && character.physicalAppearanceList.hairColor}</span></li>
-                        <li>Height: <span>{character.physicalAppearanceList && character.physicalAppearanceList.height}</span></li>
-                        <li>Weight: <span>{character.physicalAppearanceList && character.physicalAppearanceList.weight}</span></li>
-                        <li>Build: <span>{character.physicalAppearanceList && character.physicalAppearanceList.build}</span></li>
-                    </ul>
+                    <DisplayFull {...this.props} data={character.short} />
+                    <DisplayFull {...this.props} data={character.history} />
+                    <DisplayFull {...this.props} data={character.physicalAppearance} />
                 </div>
             </div>
         );

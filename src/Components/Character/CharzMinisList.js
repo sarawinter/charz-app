@@ -23,14 +23,35 @@ class CharMiniList extends Component {
     }
 
     goToCharacter = (charId) => {
-        console.log(charId)
         this.setState({ charId: charId });
+    }
+
+    getBasicData = (character) => {
+        const fullName = character.basicInfo.find(info => info.id === "basicinfo.fullname");
+        const nickname = character.basicInfo.find(info => info.id === "basicinfo.nickname");
+        const id = character.metadata.id;
+        const image = character.image.imageSrc;
+        const completedValue = this.getCompletedValue(character);
+
+        return {
+            fullName: fullName.value,
+            nickname: nickname.value,
+            id: id,
+            image: image,
+            completedValue: completedValue
+        }
+    }
+
+    getCompletedValue = (character) => {
+        return 50;
     }
 
     render() {
 
-        const charsList = this.state.characterList.map(item => <CharMini key={item.id} character={item} goto={this.goToCharacter} />) || [];
-
+        const charsList = this.state.characterList.map((item) => {
+            const basicChar = this.getBasicData(item);
+            return <CharMini key={item.metadata.id} character={basicChar} goto={this.goToCharacter} /> || []
+        });
 
         return (
             <div className="chars-mini-list">

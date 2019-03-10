@@ -25,6 +25,7 @@
     position: fixed;
     right: 32px;
     top: 65px;
+    z-index: 10;
 }
 .control-zone {
     position: absolute;

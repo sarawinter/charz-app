@@ -86,12 +86,14 @@
     color: #777;
 }
 
-.full-char ul {
+.full-char .list-item {
+    display: list-item;
     list-style-type: circle;
-    padding-left: 25px;
     color: #333;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 9pt;
 }
 
 .full-char .pos-right {

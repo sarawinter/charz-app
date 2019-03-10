@@ -24,3 +24,9 @@
     text-align: center;
     flex-grow: 1;
 }
+
+.completed-value {
+    font-family: 'Fredericka the Great', Arial, Helvetica, sans-serif;
+    color: green;
+    padding-right: 5px;
+}

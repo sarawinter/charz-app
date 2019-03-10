@@ -14,3 +14,7 @@ input, textarea {
 input:focus, textarea:focus { 
     border-bottom: 1px dashed #ccc;
 }
+
+textarea.long {
+    height: 50%;
+}
