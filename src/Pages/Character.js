@@ -30,11 +30,15 @@ class Character extends Component {
                     <FullChar charId={this.state.charId} editEnabled={this.state.editEnabled} />
                 </div>
                 <div className="control-area">
-                {this.state.editEnabled ?
-                    <MainBtn enabled={true} size="large" type="cancel" onClickEvent={this.cancelEditMode} />
-                :
-                    <MainBtn enabled={true} size="large" type="main-edit" onClickEvent={this.enableEditMode} />
-                }
+                    {this.state.editEnabled ?
+                        <React.Fragment>
+                            <MainBtn enabled={true} size="medium" type="info" />
+                            <MainBtn enabled={true} size="medium" type="list" />
+                            <MainBtn enabled={true} size="large" type="cancel" onClickEvent={this.cancelEditMode} />
+                        </React.Fragment>
+                        :
+                        <MainBtn enabled={true} size="large" type="main-edit" onClickEvent={this.enableEditMode} />
+                    }
                 </div>
             </div>
         );

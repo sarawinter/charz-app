@@ -4,8 +4,8 @@ import './_full-char.css';
 import '../FormElements/_form-container.css';
 import '../FormElements/_form-elements.css';
 
-import BasicInfo from './Traits/BasicInfo';
-import DisplayFull from './Traits/DisplayFull'
+import BasicInfo from './Display/BasicInfo';
+import DisplayFull from './Display/DisplayFull'
 
 class FullChar extends Component {
 

@@ -66,8 +66,7 @@ const character = {
             id: "short.short",
             type: "longmultiline",
             points: 3,
-            value: `This is a cute little text to get the attention of your reader and so that your remember to make 
-            the character as memorable as possible. Don't go crazy though.`
+            value: `This is a cute little text to get the attention of your reader and so that you remember to make the character as memorable as possible. Don't go crazy though.`
         }
     ],
     history: [

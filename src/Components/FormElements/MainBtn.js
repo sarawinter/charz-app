@@ -43,6 +43,10 @@ class MainBtn extends Component {
                 iconClass = "far fa-lightbulb";
                 btnClass = "info";
                 break;
+            case "list":
+                iconClass = "fas fa-list";
+                btnClass = "list";
+                break;
             default:
                 iconClass = "";
                 btnClass = "default";

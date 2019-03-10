@@ -2,41 +2,44 @@
 *[class^="btn-"] {
     box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.3);
     pointer-events: all;
-    border: 1px solid #fff;
+    border: 0px solid #fff;
     background: #fff;
     color: #777;
     border-radius: 50%;
+    text-align: center;
 }
 
 .btn-main-add, .btn-main-edit {
-    border: 0px solid #89BDD3;
     background: #05386B;
     color: #fff;
 }
 
 .btn-cancel {
-    border: 0px solid white;
     background: firebrick;
     color: white;
 }
 
+.btn-list {
+    color: white;
+    background: #05386B;
+}
+
 .btn-save {
-    border: 3px solid white;
-    background: white;
-    color: #58b222;
+    background: #58b222;
+    color: white;
 }
 
 .btn-info {
-    border: 0px solid white;
     color: white;
-    background: #f2f241;
+    background: #05386B;
 }
 
 *[class^="btn-"].large {
-    margin: 20px;
+    margin: 15px;
     height: 50px;
     width: 50px;
     font-size: 20px;
+    padding: 14px;
 }
 
 *[class^="btn-"].small {
@@ -46,6 +49,7 @@
     font-size: 12px;
     top: -9px;
     position: absolute;
+    padding: 5px;
 }
 
 *[class^="btn-"].medium {
@@ -53,4 +57,5 @@
     height: 35px;
     width: 35px;
     font-size: 20px;
+    padding: 6px;
 }
