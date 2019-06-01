@@ -67,10 +67,11 @@ p, ul {
     position: fixed;
     bottom: 0;
     right: 0;
+    left: 0;
     text-align: right;
     max-width: 660px;
     margin-right: auto;
     margin-left: auto;
     pointer-events: none;
-    background: linear-gradient(to bottom, rgba(231,229,222,0) 24%,rgba(231,229,222,0.9) 35%,rgba(231,229,222,0.9) 65%,rgba(231,229,222,0) 76%,rgba(231,229,222,0) 100%);
+    /*background: linear-gradient(to bottom, rgba(231,229,222,0) 24%,rgba(231,229,222,0.9) 35%,rgba(231,229,222,0.9) 65%,rgba(231,229,222,0) 76%,rgba(231,229,222,0) 100%);*/
 }

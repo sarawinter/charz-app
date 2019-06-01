@@ -9,6 +9,9 @@
     padding: 10px;
     overflow: hidden;
     background-color: #e7e5de;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .edit-form-inner {
     position: absolute;
@@ -22,9 +25,9 @@
     border-radius: 10px 10px 0 0;
 }
 .cancel-zone {
-    position: fixed;
+    position: absolute;
     right: 32px;
-    top: 65px;
+    top: 15px;
     z-index: 10;
 }
 .control-zone {

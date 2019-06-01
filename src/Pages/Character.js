@@ -31,13 +31,15 @@ class Character extends Component {
                 </div>
                 <div className="control-area">
                     {this.state.editEnabled ?
-                        <React.Fragment>
+                        <div style={{ display: 'inline' }}>
                             <MainBtn enabled={true} size="medium" type="info" />
                             <MainBtn enabled={true} size="medium" type="list" />
                             <MainBtn enabled={true} size="large" type="cancel" onClickEvent={this.cancelEditMode} />
-                        </React.Fragment>
+                        </div>
                         :
-                        <MainBtn enabled={true} size="large" type="main-edit" onClickEvent={this.enableEditMode} />
+                        <div style={{ display: 'inline' }}>
+                            <MainBtn enabled={true} size="large" type="main-edit" onClickEvent={this.enableEditMode} />
+                        </div>
                     }
                 </div>
             </div>

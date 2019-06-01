@@ -42,6 +42,8 @@
     position: relative;
     letter-spacing: 0.5pt;
     pointer-events: none;
+    font-weight: bold;
+    color: #333;
 }
 
 .full-char .top-info {
@@ -61,6 +63,7 @@
 }
 .full-char .top-info .rightish {
     position: relative;
+    flex-grow: 1;
 }
 
 .full-char .content {
@@ -83,7 +86,7 @@
     margin: 0;
     margin-bottom: 7px;
     padding-left: 10px;
-    color: #777;
+    color: #333;
 }
 
 .full-char .list-item {
@@ -93,7 +96,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 25px;
-    font-size: 9pt;
+    font-size: 10pt;
 }
 
 .full-char .pos-right {

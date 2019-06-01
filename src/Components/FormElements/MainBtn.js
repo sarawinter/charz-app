@@ -56,7 +56,9 @@ class MainBtn extends Component {
         return (
             <React.Fragment>
                 {enabled &&
-                    <button className={`btn-${btnClass} ${btnSize}`}><i className={iconClass} onClick={() => this.props.onClickEvent()}></i></button>
+                    <button className={`btn-${btnClass} ${btnSize}`} onClick={this.props.onClickEvent || null}>
+                        <i className={iconClass}></i>
+                    </button>
                 }
             </React.Fragment>
         );
